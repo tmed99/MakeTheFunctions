@@ -5,6 +5,10 @@ using namespace std;
 
 //prototypes:
 
+void fillWithP (vector < int > &, int);
+void fillWithQ (vector < int > &, int);
+bool isPositive (int);
+void printVector (const vector < int > &);
 
 /////DO NOT TOUCH/////
 int main()
@@ -26,8 +30,8 @@ int main()
     projects.resize(numProjects);
     quizzes.resize(numQuizzes);
 
-    fillWith(projects, 90); // Fills the vector with all value 90s
-    fillWith(quizzes, 80); // Fills the vector with all value 80s
+    fillWithP(projects, 90); // Fills the vector with all value 90s
+    fillWithQ(quizzes, 80); // Fills the vector with all value 80s
 
     cout<<"\nProject Scores:\n";
     printVector(projects); // Prints vector with space after each cell
@@ -42,3 +46,27 @@ int main()
 }
 
 //function definitions
+void fillWithP (vector < int > &numProjects, int newProjects)
+  {
+    for (int i=0; i<numProjects(); i++)
+    {
+      numProjects = newProjects;
+    }
+  }
+
+void fillWithQ (vector < int > &numQuizzes, int newQuizzes)
+  {
+    for (int i=0; i<numQuizzes(); i++)
+      {
+        numQuizzes = newQuizzes;
+      }
+  }
+
+bool isPositive (int)
+  {
+    
+  }
+void printVector (const vector < int > &)
+  {
+
+  }
